@@ -6,6 +6,9 @@ client = discord.Client()
 async def on_ready():
     print('We have logged in as {0.user}'.format(client))
 
+x = str(input("input"))
+discord.Message()
+
 @client.event
 async def on_message(message):
     if message.author == client.user:
@@ -14,4 +17,4 @@ async def on_message(message):
     if message.content.startswith('$hello'):
         await message.channel.send('Hello!')
 
-client.run('NTQ0ODc4NTc5ODc2MzY0MzAy.XGLPuA.aKJh9ICQtTbUK603M0IrWOqS-fc')
+client.run('')
